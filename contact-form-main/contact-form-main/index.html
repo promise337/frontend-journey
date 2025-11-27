@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 class="title">Contact Us</h1><br>
+  
+    <form action="form.php" method="POST">
+      <div class="name-label">
+        <Label class="fname" for="first name">First Name *</Label>
+        <Label class="lname" for="last name">Last Name *</Label><br>
+      </div>
+      <div class="name-input">
+        <input class="fname-input" type="firstname" name="first_name" required>
+        <input class="lname-input" type="lastname" name="last_name" required><br>
+      </div>
+       <div id="email">
+         <div class="email-label">
+           <Label for="Email">Email Address *</Label><br>
+         </div>
+         <div>
+           <input class="email-input" type="email" name="email" required><br>
+         </div>
+       </div>
+      <div class="query-label">
+        <Label for="query type">Query Type *</Label><br>
+        <div class="query-options">
+          <!-- <span class="all"> -->
+            
+            <label class="option">
+              <input type="radio" name="query_types" value="Support Request">
+              <span class="text">Support Request</span>
+            </label>
+
+            <label class="option">
+              <input type="radio" name="query_types" value="General Enquiry">
+              <span class="text">General Enquiry</span>
+            </label>
+
+          <!-- </span> -->
+
+        </div>
+
+      </div>
+
+      <Label class="message-label" for="message">Message *</Label><br>
+      <div class="message-area">
+        <textarea class="text-box" name="message" rows="5" cols="50"></textarea><br>
+        <div class="consent">
+          <input style="font-size: small;" class="consent-input" type="checkbox" name="consent"> I consent to being contacted by the team<br><br>
+        </div>
+      </div>
+      
+  
+      <div >
+      <input class="submit-button"type="submit" value="Submit">
+      </div>
+  
+    </form>
+    
+    <!-- <div class="attribution"> -->
+      <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.  -->
+      <!-- Coded by <a href="#">Ugochukwu Anazodo</a>. -->
+    </div>
+  </div>
+
+</body>
+</html>

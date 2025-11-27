@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+:root{
+--Green-lighter: hsl(148, 38%, 91%);
+--Green-medium: hsl(169, 82%, 27%);
+--White: hsl(0, 0%, 100%);
+--Grey-medium: hsl(186, 15%, 59%);
+--Grey-darker: hsl(187, 24%, 22%);
+--Red: hsl(0, 66%, 54%);
+--font-sans: 'Karla';
+}
+
+body{
+    background-color: var(--Green-lighter);
+    font-family: var(--font-sans);
+    margin: 2rem;
+    /* background-color: var(--White); */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--Green-lighter); */
+    
+}
+
+.container{
+    max-width: 50%;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid var(--Grey-medium);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--White);
+}
+
+
+
+.title{
+    text-align: left;
+    color: var(--Grey-darker);
+    font-family: var(--font-sans);
+    font-weight: 700;
+}
+
+.name-label{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 1rem; */
+}
+
+.name-input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    /* width: 100%; */
+    /* border: 1px solid red; */
+}
+
+.fname-input, .lname-input{
+    /* font-family: var(--font-sans); */
+    font-weight: 400;
+    color: var(--Grey-darker);
+    padding-top:3px;
+    padding-bottom:3px;
+    width: 48%;
+    border-radius: 5px;
+    border: 1px solid var(--Grey-medium);
+
+}
+
+.email-label{
+    font-family: var(--font-sans);
+    font-weight: 400;
+    color: var(--Grey-darker);
+    font-size: 16px;
+    text-align: left;
+    margin-top: 1.0rem;
+    margin-bottom: 0.15rem; 
+}
+
+.email-input{
+    font-weight: 400;
+    color: var(--Grey-darker);
+    padding-top:3px;
+    padding-bottom:3px;
+    width: 98%;
+    border: 1px solid var(--Grey-medium);
+    border-radius: 5px;
+}
+  
+.query-label{
+    font-family: var(--font-sans);
+    font-weight: 400;
+    color: var(--Grey-darker);
+    font-size: 16px;
+    text-align: left;
+    margin-top: 1.0rem;
+    margin-bottom: 0.15rem; 
+}
+
+.query-options{
+    display:flex;
+    justify-content: space-between;
+}
+
+#option1, #option2{
+    display:flex;
+    justify-content:flex-start;
+    text-align: left;
+    border: 1px solid red;
+
+}
